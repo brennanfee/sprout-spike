@@ -7,13 +7,31 @@
     "bugs": "<%- repositoryBugsUrl %>",
     "author": "<%- author %>",
     "keywords": [],
-    "devDependencies": {},
+    "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "htmlhint": "^0.9.13",
+        "prettier": "^1.12.1",
+        "stylelint": "^9.2.0",
+        "stylelint-config-standard": "^18.2.0",
+        "reshape-standard": "^3.3.0",
+        "spike-css-standards": "^4.0.0",
+        "spike-js-standards": "^2.0.2",
+        "spike-optimize": "^0.1.2",
+        "spike-page-id": "^1.1.0",
+        "spike": "^2.2.1"
+    },
     "dependencies": {},
+    "main": "app.js",
 <% if (license === 'UNLICENSED' || !isNpmPkg ) { %>
     "private": true,
 <% } %>
     "license": "<%- license %>",
     "scripts": {
+        "start": "spike watch",
+        "build": "spike compile",
+        "prod": "NODE_ENV=production spike compile -e production",
         "test": "echo 'Error: no tests specified' && exit 1"
     }
 }
