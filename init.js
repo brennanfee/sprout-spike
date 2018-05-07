@@ -77,12 +77,6 @@ exports.configure = [
         filter: _stripPeriodIfNeeded,
     },
     {
-        type: 'confirm',
-        name: 'isNpmPkg',
-        message: 'Is this project an NPM package?',
-        default: false,
-    },
-    {
         name: 'authorName',
         message: "Author's name:",
         default: () => {
