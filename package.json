@@ -1,12 +1,14 @@
 {
   "name": "sprout-spike",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "My base template for a static Spike site",
   "repository": "github:brennanfee/sprout-spike",
   "homepage": "https://github.com/brennanfee/sprout-spike#readme",
   "bugs": "https://github.com/brennanfee/sprout-spike/issues",
   "author": "Brennan Fee <brennan@github.mailbots.org> (https://github.com/brennanfee)",
-  "keywords": ["sprout-template"],
+  "keywords": [
+    "sprout-template"
+  ],
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
@@ -28,7 +30,9 @@
       "node": true,
       "es6": true
     },
-    "extends": ["plugin:prettier/recommended"]
+    "extends": [
+      "plugin:prettier/recommended"
+    ]
   },
   "prettier": {
     "printWidth": 100,
