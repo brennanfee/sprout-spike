@@ -8,19 +8,19 @@
     "author": "<%- author %>",
     "keywords": [],
     "devDependencies": {
-        "eslint": "^4.19.1",
+        "eslint": "^5.1.0",
         "eslint-config-prettier": "^2.9.0",
-        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-prettier": "^2.6.2",
+        "prettier": "^1.13.7",
         "htmlhint": "^0.9.13",
-        "prettier": "^1.12.1",
-        "stylelint": "^9.2.0",
+        "stylelint": "^9.3.0",
         "stylelint-config-standard": "^18.2.0",
         "reshape-standard": "^3.3.0",
         "spike-css-standards": "^4.0.0",
-        "spike-js-standards": "^2.0.2",
+        "spike-js-standards": "^2.1.0",
         "spike-optimize": "^0.1.2",
         "spike-page-id": "^1.1.0",
-        "spike": "^2.2.1"
+        "spike": "^2.2.2"
     },
     "dependencies": {},
     "main": "app.js",
@@ -31,23 +31,16 @@
             "node": true,
             "es6": true
         },
-        "extends": [
-            "plugin:prettier/recommended"
-        ]
+        "extends": ["plugin:prettier/recommended"]
     },
     "prettier": {
         "printWidth": 100,
-        "tabWidth": 4,
-        "useTabs": false,
-        "singleQuote": true,
         "trailingComma": "es5",
-        "bracketSpacing": true,
-        "jsxBracketSameLine": false,
-        "arrowParens": "avoid",
         "proseWrap": "always",
+        "semi": false,
+        "singleQuote": true,
         "requirePragma": false,
-        "insertPragma": false,
-        "semi": false
+        "insertPragma": false
     },
     "scripts": {
         "start": "spike watch",
