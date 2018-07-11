@@ -1,54 +1,50 @@
 {
-    "name": "sprout-spike",
-    "version": "0.0.1",
-    "description": "My base template for a static Spike site",
-    "repository": "github:brennanfee/sprout-spike",
-    "homepage": "https://github.com/brennanfee/sprout-spike#readme",
-    "bugs": "https://github.com/brennanfee/sprout-spike/issues",
-    "author": "Brennan Fee <github@todaytechsoft.biz> (https://github.com/brennanfee)",
-    "keywords": [
-        "sprout-template"
-    ],
-    "devDependencies": {
-        "eslint": "^4.19.1",
-        "eslint-config-prettier": "^2.9.0",
-        "eslint-plugin-prettier": "^2.6.0",
-        "prettier": "^1.12.1",
-        "jest": "^22.4.3",
-        "shelljs": "^0.8.1",
-        "sprout": "^1.2.1"
+  "name": "sprout-spike",
+  "version": "0.0.1",
+  "description": "My base template for a static Spike site",
+  "repository": "github:brennanfee/sprout-spike",
+  "homepage": "https://github.com/brennanfee/sprout-spike#readme",
+  "bugs": "https://github.com/brennanfee/sprout-spike/issues",
+  "author": "Brennan Fee <brennan@github.mailbots.org> (https://github.com/brennanfee)",
+  "keywords": ["sprout-template"],
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "prettier": "^1.12.1",
+    "jest": "^22.4.3",
+    "shelljs": "^0.8.1",
+    "sprout": "^1.2.1"
+  },
+  "dependencies": {
+    "gh-got": "^7.0.0",
+    "underscore.string": "^3.3.4"
+  },
+  "main": "init.js",
+  "private": true,
+  "license": "Apache-2.0",
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
     },
-    "dependencies": {
-        "gh-got": "^7.0.0",
-        "underscore.string": "^3.3.4"
-    },
-    "main": "init.js",
-    "private": true,
-    "license": "Apache-2.0",
-    "eslintConfig": {
-        "env": {
-            "node": true,
-            "es6": true
-        },
-        "extends": [
-            "plugin:prettier/recommended"
-        ]
-    },
-    "prettier": {
-        "printWidth": 100,
-        "tabWidth": 2,
-        "useTabs": false,
-        "singleQuote": true,
-        "trailingComma": "es5",
-        "bracketSpacing": true,
-        "jsxBracketSameLine": false,
-        "arrowParens": "avoid",
-        "proseWrap": "always",
-        "requirePragma": false,
-        "insertPragma": false,
-        "semi": false
-    },
-    "scripts": {
-        "test": "jest --coverage"
-    }
+    "extends": ["plugin:prettier/recommended"]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "arrowParens": "avoid",
+    "proseWrap": "always",
+    "requirePragma": false,
+    "insertPragma": false,
+    "semi": false
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  }
 }
