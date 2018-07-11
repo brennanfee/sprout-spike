@@ -12,7 +12,7 @@ const sprout = new Sprout(path.join(__dirname, 'config'))
 
 describe('NPM package scenario with license works', () => {
   beforeAll(() => {
-    jest.setTimeout(30000)
+    jest.setTimeout(60000)
 
     let options = {
       locals: {
